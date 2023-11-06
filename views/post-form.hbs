@@ -1,0 +1,41 @@
+<!-- Simple form which will send a POST request -->
+<h1>Create a New Recipe</h1>
+    <form action="/user-data" method="post">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="level">Level:</label>
+        <select id="level" name="level">
+            <option value="Easy Peasy">Easy Peasy</option>
+            <option value="Amateur Chef">Amateur Chef</option>
+            <option value="UltraPro Chef">UltraPro Chef</option>
+        </select><br><br>
+
+        <label for="ingredients">Ingredients (comma-separated):</label>
+        <input type="text" id="ingredients" name="ingredients"><br><br>
+
+        <label for="cuisine">Cuisine:</label>
+        <input type="text" id="cuisine" name="cuisine" required><br><br>
+
+        <label for="dishType">Dish Type:</label>
+        <select id="dishType" name="dishType">
+            <option value="breakfast">Breakfast</option>
+            <option value="main_course">Main Course</option>
+            <option value="soup">Soup</option>
+            <option value="snack">Snack</option>
+            <option value="drink">Drink</option>
+            <option value="dessert">Dessert</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" name="image" value="https://images.media-allrecipes.com/images/75131.jpg"><br><br>
+
+        <label for="duration">Duration (minutes):</label>
+        <input type="number" id="duration" name="duration" min="0"><br><br>
+
+        <label for="creator">Creator:</label>
+        <input type="text" id="creator" name="creator"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
