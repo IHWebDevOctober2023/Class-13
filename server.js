@@ -17,6 +17,7 @@ const Recipe = require("./models/Recipe.model");
 
 mongoose.connect(MONGO_URI)
     .then(() => console.log("Connected to mongo"))
+    .catch((error) => console.log(error));
 
 const hbs = require("hbs");
 const path = require("path")
